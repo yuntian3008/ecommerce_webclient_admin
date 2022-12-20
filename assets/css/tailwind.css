@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-info: 194deg 80% 73%;
+    --color-success: 168deg 67% 49%;
+    --color-warning: 33deg 83% 41%;
+    --color-error: 340deg 87% 57%;
+
+    --color-info-content: 194deg 100% 15%;
+    --color-success-content: 168deg 100% 10%;
+    --color-warning-content: 33deg 100% 88%;
+    --color-error-content: 340deg 100% 91%;
+  }
+}
+@layer components {
+  .error-toast {
+    background-color: theme('colors.error');
+    color: theme('colors.errorContent');
+  }
+}
+
+.toasted {
+  min-height: 38px;
+}
+
